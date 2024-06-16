@@ -1,0 +1,46 @@
+class args():
+    epochs = 5
+    batch_size = 4
+    in_chans = 1
+    out_chans = 1
+    embed_dim = 96
+    window_size = 7
+
+    base_images_ir = "./dataset/base_images_ir"
+    detail_images_ir = "./dataset/detail_images_ir"
+    base_images_vis = "./dataset/base_images_vis"
+    detail_images_vis = "./dataset/detail_images_vis"
+    images_ir = "./dataset/ir"
+    images_vis = "./dataset/vis"
+    save_loss_dir = "./loss"
+    save_model_dir = "./model"
+    model_path_gray = "./model/model.model"
+    ir_base_path = "./test_imgs/ir_base/"
+    ir_detail_path = "./test_imgs/ir_detail/"
+    vis_base_path = "./test_imgs/vis_base/"
+    vis_detail_path = "./test_imgs/vis_detail/"
+    ir_path = "./test_imgs/ir/"
+    vis_path = "./test_imgs/vis/"
+    output_path = './outputs/'
+
+    height = 224
+    width = 224
+    image_size = 224
+    cuda = 1
+    ssim_weight = [1, 10, 100, 1000, 10000]
+    ssim_path = ['1e0', '1e1', '1e2', '1e3', '1e4']
+    lr = 1e-4
+    log_interval = 5
+    log_save_model_interval = 250
+    log_iter = 1
+    eps = 1e-8
+    a = 0.7
+    b = 0.3
+    alpha = 0.7
+    beta = 100
+    gamma = 0.7
+    lamda = 60
+    k = 2
+    l_max = 1.8
+    l_min = 1.2
+    max_epoch = 20
